@@ -4,7 +4,7 @@
 **Student ID:** 2025/INT/8916
 **Internship Organization:** International Cybersecurity and Digital Forensic Academy (ICDFA)
 **Course:** INT303: Networking Fundamentals
-**Platform:** Kali Linux / Ubuntu / OWASP BWA
+**Platform:** Kali Linux / OWASP BWA
 
 ---
 
@@ -28,8 +28,8 @@
 **Static Routing:**
 
 ```bash
-sudo ip route add 192.168.30.0/24 via 192.168.30.216 dev eth0
-ping 192.168.255.130
+sudo ip route add 192.168.XX.X/24 via 192.168.XX.XXX dev eth0
+ping 192.168.25X.XXX
 ```
 
 **Network Namespaces & VLANs:**
@@ -45,22 +45,22 @@ sudo ip link set veth2 netns vlan2
 **IP Assignment:**
 
 ```bash
-sudo ip netns exec vlan1 ip addr add 192.168.30.1/24 dev veth1
-sudo ip netns exec vlan2 ip addr add 192.168.30.2/24 dev veth2
+sudo ip netns exec vlan1 ip addr add 192.168.XX.X/24 dev veth1
+sudo ip netns exec vlan2 ip addr add 192.168.XX.X/24 dev veth2
 ```
 
 **Firewall Setup:**
 
 ```bash
 echo 1 > /proc/sys/net/ipv4/ip_forward
-sudo iptables -A FORWARD -s 192.168.30.1 -d 192.168.30.2 -j ACCEPT
-sudo iptables -A FORWARD -s 192.168.30.1 -d 192.168.30.220 -j DROP
+sudo iptables -A FORWARD -s 192.168.XX.x -d 192.168.XX.X -j ACCEPT
+sudo iptables -A FORWARD -s 192.168.XX.X -d 192.168.XX.XXX -j DROP
 ```
 
 **Traffic Monitoring:**
 
 ```bash
-sudo tcpdump -i veth1 host 192.168.30.2
+sudo tcpdump -i veth1 host 192.168.XX.X
 ```
 
 ### 🔍 Key Insights
@@ -85,12 +85,12 @@ sudo tcpdump -i veth1 host 192.168.30.2
 **Interface Check:**
 
 * `lo`: 127.0.0.1 (loopback)
-* `eth0`: 192.168.225.128
+* `eth0`: 192.168.XXX.XXX
 
 **tcpdump Traffic Analysis:**
 
 * Captured ARP, DNS, TCP/HTTPS, NetBIOS
-* Traffic to OWASP VM (192.168.225.130) confirmed
+* Traffic to OWASP VM (192.168.XXX.XXX) confirmed
 
 **netstat Output:**
 
