@@ -1,7 +1,5 @@
 # ICDFA Internship Lab Portfolio: Networking Fundamentals
 
-**Intern:** Oluwasola Adebayo Godwin
-**Student ID:** 2025/INT/8916
 **Internship Organization:** International Cybersecurity and Digital Forensic Academy (ICDFA)
 **Course:** INT303: Networking Fundamentals
 **Platform:** Kali Linux / OWASP BWA
