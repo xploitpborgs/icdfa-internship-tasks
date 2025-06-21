@@ -1,4 +1,4 @@
-# 🔪 ICDFA Internship Lab Portfolio: Networking Fundamentals
+# ICDFA Internship Lab Portfolio: Networking Fundamentals
 
 **Intern:** Oluwasola Adebayo Godwin
 **Student ID:** 2025/INT/8916
@@ -10,7 +10,7 @@
 
 ## Lab 1: Simulating Network Routing and VLAN Configuration in Linux
 
-### 🔹 Objectives
+### Objectives
 
 * Configure static routing in Linux
 * Simulate VLANs using network namespaces
@@ -19,11 +19,11 @@
 * Implement firewall rules with iptables
 * Monitor traffic with tcpdump
 
-### 🔧 Tools Used
+### Tools Used
 
 * `ip route`, `ip netns`, `ping`, `traceroute`, `iptables`, `tcpdump`
 
-### 🔮 Methodology
+### Methodology
 
 **Static Routing:**
 
@@ -73,14 +73,14 @@ sudo tcpdump -i veth1 host 192.168.XX.X
 
 ## Lab 2: Exploring Network Interfaces and Packet Transmission
 
-### 🔹 Objectives
+### Objectives
 
 * View and configure interfaces
 * Capture traffic with tcpdump and Wireshark
 * Monitor bandwidth with `iftop`
 * Analyze active connections and protocol activity
 
-### 🔮 Methodology
+### Methodology
 
 **Interface Check:**
 
@@ -121,14 +121,14 @@ sudo tcpdump -i veth1 host 192.168.XX.X
 
 ## Lab 3: TCP/IP Protocol Stack and Packet Inspection
 
-### 🔹 Objectives
+### Objectives
 
 * Study TCP/IP layers and OSI comparison
 * Analyze TCP flags, retransmissions
 * Inspect HTTP and SSH traffic
 * Simulate interface failure
 
-### 🔮 Methodology
+### Methodology
 
 **TCP/IP vs OSI Layers:**
 
